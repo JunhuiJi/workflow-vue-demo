@@ -1,6 +1,6 @@
 <template>
   <el-container class="container">
-    <el-aside class="aside">
+    <el-aside class="aside top-margin">
       <HistoricTaskAside/>
     </el-aside>
     <el-container>
@@ -23,5 +23,9 @@ import HistoricTaskMain from "@/components/HistoricTask/HistoricTaskMain.vue";
 
 .container {
   height: 80vh;
+}
+
+.top-margin {
+  margin-top: 20px;
 }
 </style>
