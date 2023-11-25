@@ -22,7 +22,7 @@ import OngoingTaskMain from "@/components/ongoingTask/OngoingTaskMain.vue";
 }
 
 .container {
-  height: 80vh;
+  height: 100vh;
 }
 
 .top-margin {

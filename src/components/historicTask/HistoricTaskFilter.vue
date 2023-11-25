@@ -7,19 +7,19 @@
       <el-scrollbar style="height: 35vh">
         <el-form :model="form">
           <el-form-item label="流程定义名称">
-            <el-input v-model="form.name"/>
+            <el-input v-model="form.processDefinitionName"/>
           </el-form-item>
           <el-form-item label="任务名称（精确）">
-            <el-input v-model="form.name"/>
+            <el-input v-model="form.preciseName"/>
           </el-form-item>
           <el-form-item label="任务名称（模糊）">
-            <el-input v-model="form.name"/>
+            <el-input v-model="form.fuzzyName"/>
           </el-form-item>
           <el-form-item label="任务描述（精确）">
-            <el-input v-model="form.name"/>
+            <el-input v-model="form.preciseDescription"/>
           </el-form-item>
           <el-form-item label="任务描述（模糊）">
-            <el-input v-model="form.name"/>
+            <el-input v-model="form.fuzzyDescription"/>
           </el-form-item>
           <el-form-item label="任务创建时间">
             <el-col :span="11">
@@ -45,7 +45,7 @@
           <el-form-item label="任务完成时间">
             <el-col :span="11">
               <el-date-picker
-                  v-model="form.date1"
+                  v-model="form.date3"
                   type="date"
                   placeholder="选择日期"
                   style="width: 100%"
@@ -56,7 +56,7 @@
             </el-col>
             <el-col :span="11">
               <el-date-picker
-                  v-model="form.date2"
+                  v-model="form.date4"
                   type="date"
                   placeholder="选择日期"
                   style="width: 100%"
@@ -82,10 +82,15 @@ import {reactive} from 'vue'
 
 // do not use same name with ref
 const form = reactive({
-  name: '',
-  region: '',
+  processDefinitionName: '',
+  preciseName: '',
+  fuzzyName: '',
+  preciseDescription: '',
+  fuzzyDescription: '',
   date1: '',
   date2: '',
+  date3: '',
+  date4: '',
 })
 </script>
 

@@ -22,7 +22,7 @@ import HistoricTaskMain from "@/components/HistoricTask/HistoricTaskMain.vue";
 }
 
 .container {
-  height: 80vh;
+  height: 100vh;
 }
 
 .top-margin {
